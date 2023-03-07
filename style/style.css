@@ -1,0 +1,16 @@
+/** {*/
+/*    border: solid black 1px;*/
+/*}*/
+body {
+    /*background: #8fb3f5;*/
+}
+#addr {
+    font-family: 'Tilt Neon', cursive;
+}
+.carousel-item img {
+    height: 350px;
+}
+.row .shadow-lg {
+    padding: 0px;
+    height: 350px;
+}
