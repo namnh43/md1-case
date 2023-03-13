@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Module1-Case</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/bbbce8c886.css" crossorigin="anonymous">
@@ -29,27 +32,29 @@
                     <img src="./img/avatar.png" alt="" width="50" height="50" class=" align-text-center">
                     Hiếu Farmer
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <li class="nav-item home-page" onclick="display(0)">
                             <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item about-page" onclick="display(1)">
                             <a class="nav-link active" aria-current="page" href="#">Giới thiệu</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item product-page" onclick="display(2)">
                             <a class="nav-link active" aria-current="page" href="#">Sản phẩm</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item tech-page">
                             <a class="nav-link active" aria-current="page" href="#">Hỗ trợ kỹ thuật</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item new-page">
                             <a class="nav-link active" aria-current="page" href="#">Tin tức</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item contact-page">
                             <a class="nav-link active" aria-current="page" href="#">Liên hệ</a>
                         </li>
                     </ul>
@@ -61,183 +66,302 @@
             </div>
         </nav>
     </div>
-
-<!--    <div class="content content-home">-->
-<!--        <div id="carouselExampleIndicators" class="content1 carousel slide" data-bs-ride="carousel">-->
-<!--            <div class="carousel-indicators">-->
-<!--                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>-->
-<!--                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>-->
-<!--                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
-<!--            </div>-->
-<!--            <div class="carousel-inner">-->
-<!--                <div class="carousel-item active h-25">-->
-<!--                    <img src="./img/carousel1.jpg" class="d-block img-fluid w-100" alt="...">-->
-<!--                </div>-->
-<!--                <div class="carousel-item">-->
-<!--                    <img src="./img/carousel2.jpg" class="d-block img-fluid w-100" alt="...">-->
-<!--                </div>-->
-<!--                <div class="carousel-item">-->
-<!--                    <img src="./img/carousel3.jpg" class="d-block img-fluid w-100" alt="...">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">-->
-<!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
-<!--                <span class="visually-hidden">Previous</span>-->
-<!--            </button>-->
-<!--            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">-->
-<!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
-<!--                <span class="visually-hidden">Next</span>-->
-<!--            </button>-->
-<!--        </div>-->
-<!--        <div class="content2 mt-3">-->
-<!--            <div class="container">-->
-<!--                <div class="row">-->
-<!--                    <div class="d-sm-none d-md-block col-4 shadow-lg bg-body me-4" style="padding: 0px">-->
-<!--                        <img class="w-100 h-100  " src="./img/thitcay.jpg" alt="..." >-->
-<!--                    </div>-->
-<!--                    <div class="col-sm-12 col-md-6">-->
-<!--                        <h1>Về chúng tôi</h1>-->
-<!--                        <p>Hieu-Farmer ra đời như một đam mê với nghề nông truyền thống của gia đình. Năm 2018, anh bén duyên với chồn Hương (tên khoa học là XXX), anh đã đầu tư chuồng trại con giống khởi nghiệp. Ban đầu, do chưa nắm được kỹ thuật chăn nuôi nên chồn bệnh và chết nhiều. Anh đã tìm tòi nghiên cứu, nay quy mô chuồng trại của anh đã rất lớn, và làm chủ công nghệ nuôi chồn hiện đại. Ngoài cung cấp con giống và chồn thịt thương phẩm, anh còn nhận hươớng dẫn dạy nghề nuôi chồn cho những người chăn nuôi.</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="content3 my-3">-->
-<!--            <h1 class="text-center">Sản phẩm nổi bật</h1>-->
-<!--            <div class="container">-->
-<!--                <div class="row g-5">-->
-<!--                    <div class="col-12 col-sm-6 col-md-4 ps-0">-->
-<!--                        <img src="./img/anh5.jpg" class="w-100 bg-body rounded-2 img_sp">-->
-<!--                    </div>-->
-<!--                    <div class="col-12 col-sm-6 col-md-4 ps-0 ">-->
-<!--                        <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">-->
-<!--                    </div>-->
-<!--                    <div class="col-12 col-sm-6 col-md-4 ps-0 ">-->
-<!--                        <img src="./img/anh3.jpg" class="w-100 bg-body rounded-2 img_sp">-->
-<!--                    </div>-->
-<!--                    <div class="col-12 col-sm-6 col-md-4 ps-0">-->
-<!--                        <img src="./img/anh2.jpg" class="w-100 bg-body rounded-2 img_sp">-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="content4 my-3">-->
-<!--            <h1 class="text-center">Hỗ trợ kỹ thuật</h1>-->
-<!--            <div class="container" >-->
-<!--                <div class="row">-->
-<!--                    <div class="col-12 col-md-6 col-lg-3 ps-0">-->
-<!--                        <div class="d-flex flex-column bd-highlight mb-3">-->
-<!--                            <a href="#!" style="text-decoration: none">-->
-<!--                                <div class="p-2 bd-highlight">-->
-<!--                                    <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">-->
-<!--                                </div>-->
-<!--                                <div class="p-2 bd-highlight">-->
-<!--                                    <h5>Text title display</h5>-->
-<!--                                    <p>Text display1</p>-->
-<!--                                </div>-->
-<!--                            </a>-->
-
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-12 col-md-6 col-lg-3 ps-0">-->
-<!--                        <div class="d-flex flex-column bd-highlight mb-3">-->
-<!--                            <a href="#!" style="text-decoration: none">-->
-<!--                                <div class="p-2 bd-highlight">-->
-<!--                                    <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">-->
-<!--                                </div>-->
-<!--                                <div class="p-2 bd-highlight">-->
-<!--                                    <h5>Text title display</h5>-->
-<!--                                    <p>Text display1</p>-->
-<!--                                </div>-->
-<!--                            </a>-->
-
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-12 col-md-6 col-lg-3 ps-0">-->
-<!--                        <div class="d-flex flex-column bd-highlight mb-3">-->
-<!--                            <a href="#!" style="text-decoration: none">-->
-<!--                                <div class="p-2 bd-highlight">-->
-<!--                                    <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">-->
-<!--                                </div>-->
-<!--                                <div class="p-2 bd-highlight">-->
-<!--                                    <h5>Text title display</h5>-->
-<!--                                    <p>Text display1</p>-->
-<!--                                </div>-->
-<!--                            </a>-->
-
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-12 col-md-6 col-lg-3 ps-0">-->
-<!--                        <div class="d-flex flex-column bd-highlight mb-3">-->
-<!--                            <a href="#!" style="text-decoration: none">-->
-<!--                                <div class="p-2 bd-highlight">-->
-<!--                                    <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">-->
-<!--                                </div>-->
-<!--                                <div class="p-2 bd-highlight">-->
-<!--                                    <h5>Text title display</h5>-->
-<!--                                    <p>Text display1</p>-->
-<!--                                </div>-->
-<!--                            </a>-->
-
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-12 col-md-6 col-lg-3 ps-0">-->
-<!--                        <div class="d-flex flex-column bd-highlight mb-3">-->
-<!--                            <a href="#!" style="text-decoration: none">-->
-<!--                                <div class="p-2 bd-highlight">-->
-<!--                                    <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">-->
-<!--                                </div>-->
-<!--                                <div class="p-2 bd-highlight">-->
-<!--                                    <h5>Text title display</h5>-->
-<!--                                    <p>Text display1</p>-->
-<!--                                </div>-->
-<!--                            </a>-->
-
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="content5 my-3">-->
-<!--            <h1 class="text-center">Tin tức</h1>-->
-
-<!--        </div>-->
-<!--    </div>-->
-    <div class="content content-about">
-        <div class="container mt-3 mb-5">
-            <div class="row">
-                <div class="col-md-8 col-12">
-                    <img src="./img/anh3.jpg" class="w-100 h-100 bg-body img_sp">
+    <div class="content">
+        <div class="content-home">
+            <div id="carouselExampleIndicators" class="content1 carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
                 </div>
-                <div class="col-md-4 col-12">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 mb-3 px-0">
-                                <img src="./img/anh5.jpg" class="w-100 bg-body img_sp">
+                <div class="carousel-inner">
+                    <div class="carousel-item active h-25">
+                        <img src="./img/carousel1.jpg" class="d-block img-fluid w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/carousel2.jpg" class="d-block img-fluid w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/carousel3.jpg" class="d-block img-fluid w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="content2 mt-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="d-md-none d-lg-block col-4 shadow-lg bg-body me-4" style="padding: 0px">
+                            <img class="w-100 h-100  " src="./img/thitcay.jpg" alt="...">
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <h1>Về chúng tôi</h1>
+                            <p>Hieu-Farmer ra đời như một đam mê với nghề nông truyền thống của gia đình. Năm 2018, anh
+                                bén duyên với chồn Hương (tên khoa học là XXX), anh đã đầu tư chuồng trại con giống khởi
+                                nghiệp. Ban đầu, do chưa nắm được kỹ thuật chăn nuôi nên chồn bệnh và chết nhiều. Anh đã
+                                tìm tòi nghiên cứu, nay quy mô chuồng trại của anh đã rất lớn, và làm chủ công nghệ nuôi
+                                chồn hiện đại. Ngoài cung cấp con giống và chồn thịt thương phẩm, anh còn nhận hươớng
+                                dẫn dạy nghề nuôi chồn cho những người chăn nuôi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content3 my-3">
+                <h1 class="text-center">Sản phẩm nổi bật</h1>
+                <div class="container">
+                    <div class="row g-5">
+                        <div class="col-12 col-lg-4 ps-0">
+                            <img src="./img/anh5.jpg" class="w-100 bg-body rounded-2 img_sp">
+                        </div>
+                        <div class="col-12 col-lg-4 ps-0 ">
+                            <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">
+                        </div>
+                        <div class="col-12 col-lg-4 ps-0 ">
+                            <img src="./img/anh3.jpg" class="w-100 bg-body rounded-2 img_sp">
+                        </div>
+                        <div class="col-12 col-lg-4 ps-0">
+                            <img src="./img/anh2.jpg" class="w-100 bg-body rounded-2 img_sp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content4 my-3">
+                <h1 class="text-center">Hỗ trợ kỹ thuật</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-3 ps-0">
+                            <div class="d-flex flex-column bd-highlight mb-3">
+                                <a href="#!" style="text-decoration: none">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <h5>Text title display</h5>
+                                        <p>Text display1</p>
+                                    </div>
+                                </a>
+
                             </div>
                         </div>
+                        <div class="col-12 col-lg-3 ps-0">
+                            <div class="d-flex flex-column bd-highlight mb-3">
+                                <a href="#!" style="text-decoration: none">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <h5>Text title display</h5>
+                                        <p>Text display1</p>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 ps-0">
+                            <div class="d-flex flex-column bd-highlight mb-3">
+                                <a href="#!" style="text-decoration: none">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <h5>Text title display</h5>
+                                        <p>Text display1</p>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 ps-0">
+                            <div class="d-flex flex-column bd-highlight mb-3">
+                                <a href="#!" style="text-decoration: none">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <h5>Text title display</h5>
+                                        <p>Text display1</p>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 ps-0">
+                            <div class="d-flex flex-column bd-highlight mb-3">
+                                <a href="#!" style="text-decoration: none">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <h5>Text title display</h5>
+                                        <p>Text display1</p>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content5 my-3">
+                <h1 class="text-center">Tin tức</h1>
+
+            </div>
+        </div>
+        <div class="content-about">
+            <div class="container mt-3 mb-5">
+                <div class="row">
+                    <div class="col-md-8 col-12">
+                        <img src="./img/anh3.jpg" class="w-100 h-100 bg-body img_sp">
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 mb-3 px-0">
+                                    <img src="./img/anh5.jpg" class="w-100 bg-body img_sp">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 px-0">
+                                    <img src="./img/anh4.jpg" class="w-100 bg-body img_sp">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>Chào mừng đến với trang giới thiệu về Hiêu Farmer!</h3>
+
+                <p>Hiêu Farmer là một nông dân trẻ tại Việt Nam, đam mê trồng trọt và nuôi thú từ nhỏ. Anh ta đã dành
+                    nhiều năm để tìm hiểu và học hỏi về kỹ thuật canh tác và chăm sóc cây trồng, từ đó trở thành một
+                    nông dân chuyên nghiệp với kinh nghiệm và kiến thức đầy đủ.</p>
+
+                <p>Hiêu Farmer luôn chú trọng đến sự phát triển bền vững và an toàn của sản phẩm nông nghiệp. Anh ta sử
+                    dụng các phương pháp trồng trọt hữu cơ và không sử dụng thuốc trừ sâu và phân bón hóa học độc hại.
+                    Thay vào đó, anh ta sử dụng các loại phân bón tự nhiên và các kỹ thuật canh tác thông minh để tăng
+                    hiệu suất và giảm thiểu rủi ro cho môi trường.</p>
+
+                <p>Hiêu Farmer cũng là một người yêu động vật, anh ta đã nuôi nhiều loài thú như bò, heo, gà, vịt và cá.
+                    Anh ta đảm bảo cho các loài vật của mình được nuôi dưỡng và chăm sóc đúng cách, đảm bảo cho chất
+                    lượng thực phẩm và đem lại sự hài lòng cho khách hàng.</p>
+
+                <p>Hiêu Farmer luôn mong muốn đem lại những sản phẩm nông nghiệp chất lượng và an toàn cho mọi người.
+                    Anh ta luôn tận tâm với công việc của mình và sẵn sàng học hỏi để cải tiến sản phẩm và dịch vụ của
+                    mình. Nếu bạn đang tìm kiếm những sản phẩm nông nghiệp chất lượng, hãy đến với Hiêu Farmer, bạn sẽ
+                    được trải nghiệm sự khác biệt và chất lượng tuyệt vời.</p>
+
+            </div>
+        </div>
+        <div class="content-product">
+            <h3 style="cursor: pointer" onclick="display_product(0)">Sản phẩm</h3>
+            <div class="row w-100 ">
+                <div class="col col-lg-3 px-0 d-none d-lg-block">
+                    <ul class="nav flex-column list-group list-group-flush">
+                        <li class="nav-item list-group-item" onclick="display_product(1)">
+                            <a class="nav-link active" aria-current="page" href="#!">Sản phẩm 1</a>
+                            <ul class="nav flex-column list-group list-group-flush">
+                                <li class="nav-item list-group-item">
+                                    <a class="nav-link active" aria-current="page" href="#!">Sản phẩm 1.1</a>
+                                </li>
+                                <li class="nav-item list-group-item">
+                                    <a class="nav-link active" aria-current="page" href="#!">Sản phẩm 1.2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item list-group-item" onclick="display_product(2)">
+                            <a class="nav-link active" aria-current="page" href="#!">Sản phẩm 2</a>
+                            <ul class="nav flex-column list-group list-group-flush">
+                                <li class="nav-item list-group-item">
+                                    <a class="nav-link active" aria-current="page" href="#!">Sản phẩm 2.1</a>
+                                </li>
+                                <li class="nav-item list-group-item">
+                                    <a class="nav-link active" aria-current="page" href="#!">Sản phẩm 2.2</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col col-lg-9 px-0">
+                    <div class="container content-product-all">
                         <div class="row">
-                            <div class="col-12 px-0">
-                                <img src="./img/anh4.jpg" class="w-100 bg-body img_sp">
+                            <div class="col-12 col-lg-6 ps-0 content-product-type1">
+                                <div class="d-flex flex-column bd-highlight mb-3">
+                                    <a href="#!" style="text-decoration: none">
+                                        <div class="p-2 bd-highlight">
+                                            <img src="./img/anh5.jpg" class="w-100 bg-body rounded-2 img_sp">
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <h5>Text title display</h5>
+                                            <p>Text display1</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 ps-0 content-product-type2">
+                                <div class="d-flex flex-column bd-highlight mb-3">
+                                    <a href="#!" style="text-decoration: none">
+                                        <div class="p-2 bd-highlight">
+                                            <img src="./img/anh2.jpg" class="w-100 bg-body rounded-2 img_sp">
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <h5>Text title display</h5>
+                                            <p>Text display1</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 ps-0 content-product-type2">
+                                <div class="d-flex flex-column bd-highlight mb-3">
+                                    <a href="#!" style="text-decoration: none">
+                                        <div class="p-2 bd-highlight">
+                                            <img src="./img/anh3.jpg" class="w-100 bg-body rounded-2 img_sp">
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <h5>Text title display</h5>
+                                            <p>Text display1</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 ps-0 content-product-type1">
+                                <div class="d-flex flex-column bd-highlight mb-3">
+                                    <a href="#!" style="text-decoration: none">
+                                        <div class="p-2 bd-highlight">
+                                            <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <h5>Text title display</h5>
+                                            <p>Text display1</p>
+                                        </div>
+                                    </a>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="about-content">
-            <h3>Chào mừng đến với trang giới thiệu về Hiêu Farmer!</h3>
-
-            <p>Hiêu Farmer là một nông dân trẻ tại Việt Nam, đam mê trồng trọt và nuôi thú từ nhỏ. Anh ta đã dành nhiều năm để tìm hiểu và học hỏi về kỹ thuật canh tác và chăm sóc cây trồng, từ đó trở thành một nông dân chuyên nghiệp với kinh nghiệm và kiến thức đầy đủ.</p>
-
-            <p>Hiêu Farmer luôn chú trọng đến sự phát triển bền vững và an toàn của sản phẩm nông nghiệp. Anh ta sử dụng các phương pháp trồng trọt hữu cơ và không sử dụng thuốc trừ sâu và phân bón hóa học độc hại. Thay vào đó, anh ta sử dụng các loại phân bón tự nhiên và các kỹ thuật canh tác thông minh để tăng hiệu suất và giảm thiểu rủi ro cho môi trường.</p>
-
-            <p>Hiêu Farmer cũng là một người yêu động vật, anh ta đã nuôi nhiều loài thú như bò, heo, gà, vịt và cá. Anh ta đảm bảo cho các loài vật của mình được nuôi dưỡng và chăm sóc đúng cách, đảm bảo cho chất lượng thực phẩm và đem lại sự hài lòng cho khách hàng.</p>
-
-            <p>Hiêu Farmer luôn mong muốn đem lại những sản phẩm nông nghiệp chất lượng và an toàn cho mọi người. Anh ta luôn tận tâm với công việc của mình và sẵn sàng học hỏi để cải tiến sản phẩm và dịch vụ của mình. Nếu bạn đang tìm kiếm những sản phẩm nông nghiệp chất lượng, hãy đến với Hiêu Farmer, bạn sẽ được trải nghiệm sự khác biệt và chất lượng tuyệt vời.</p>
-
+        <div class="content-tech">
+            <h3>Hỗ trợ kỹ thuật</h3>
         </div>
     </div>
+
     <div class="footer">
         <footer class="text-center text-lg-start bg-white text-muted">
             <section class="">
@@ -250,7 +374,8 @@
                                 <i class="fas fa-gem me-3 text-secondary"></i>Company name
                             </h6>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate error facere, maiores molestias nihil numquam officia repellendus voluptate. Corporis, quidem?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate error facere,
+                                maiores molestias nihil numquam officia repellendus voluptate. Corporis, quidem?
                             </p>
                         </div>
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -306,7 +431,51 @@
 </div>
 </body>
 <script>
+    function display(val) {
+        $(".content").children().hide();
+        switch (val) {
+            case 0:
+                $(".content-home").show();
+                break;
+            case 1:
+                $(".content-about").show();
+                break;
+            case 2:
+                $(".content-product").show();
+                display_product(0);
+                break;
+            case 3:
+                $(".content-tech").show();
+                break;
+            default:
+                $(".content-home").show();
+                break;
+        }
+    }
+    function display_product(val) {
+        console.log(val)
+        $(".content-product-type1").hide();
+        $(".content-product-type2").hide();
+        switch (val) {
+            case 0:
+                $(".content-product-type1").show();
+                $(".content-product-type2").show();
+                break;
+            case 1:
+                $(".content-product-type1").show();
+                break;
+            case 2:
+                $(".content-product-type2").show();
+                break;
+            default:
+                display(2);
+                break;
+        }
+    }
+
     $(document).ready(function () {
+
+        display(3);
         $(".img_sp").mouseenter(function () {
             $(this).addClass('shadow-lg p-1');
         })
