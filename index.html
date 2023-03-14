@@ -367,11 +367,11 @@
                     <div class="col px-0">
                         <div class="row align-items-center">
                             <div class="col-4">
-                                <a href="#!" style="text-decoration: none"><img src="./img/carousel1.jpg" alt="anh1"
+                                <a href="./pages/ho-tro-ky-thuat-benh-thuong-gap.html" style="text-decoration: none"><img src="./img/carousel1.jpg" alt="anh1"
                                                                                 class="w-100"></a>
                             </div>
                             <div class="col-8">
-                                <a href="#!" style="text-decoration: none">
+                                <a href="./pages/ho-tro-ky-thuat-benh-thuong-gap.html" style="text-decoration: none">
                                     <h5>Một số bệnh thường gặp trên chồn hương</h5>
                                     <ol>
                                         <li>Bệnh viêm phổi: Đây là bệnh phổ biến nhất trên chồn hương. Chồn hương bị
@@ -538,6 +538,7 @@
     </div>
 </div>
 </body>
+<script src="./js/local-storage.js"></script>
 <script>
     function display(val) {
         $(".content").children().hide();
@@ -569,9 +570,7 @@
                 break;
         }
     }
-
     function display_product(val) {
-        console.log(val)
         $(".content-product-type1").hide();
         $(".content-product-type2").hide();
         switch (val) {
@@ -592,8 +591,8 @@
     }
 
     $(document).ready(function () {
-
-        display(6);
+        let page = window.localStorage.getItem('page')
+        display(page);
         $(".img_sp").mouseenter(function () {
             $(this).addClass('shadow-lg');
         })
