@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/bbbce8c886.css" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bbbce8c886.js" crossorigin="anonymous"></script>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <style>
 
@@ -32,7 +38,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="./img/avatar.png" alt="" width="50" height="50" class=" align-text-center">
+                    <img src="./img/avatar.png" alt="" width="50" height="50" class=" align-text-center" onclick="display(0)">
                     Hiếu Farmer
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -105,17 +111,13 @@
             <div class="content2 mt-3">
                 <div class="container">
                     <div class="row">
-                        <div class="d-md-none d-lg-block col-4 shadow-lg bg-body me-4" style="padding: 0px">
-                            <img class="w-100 h-100  " src="./img/thitcay.jpg" alt="...">
+                        <div class="d-md-none d-lg-block col-4 bg-body me-4" style="padding: 0px">
+                            <img class="w-100 h-100  " src="./img/avatar.png" alt="...">
                         </div>
                         <div class="col-md-12 col-lg-6">
                             <h1>Về chúng tôi</h1>
-                            <p>Hieu-Farmer ra đời như một đam mê với nghề nông truyền thống của gia đình. Năm 2018, anh
-                                bén duyên với chồn Hương (tên khoa học là XXX), anh đã đầu tư chuồng trại con giống khởi
-                                nghiệp. Ban đầu, do chưa nắm được kỹ thuật chăn nuôi nên chồn bệnh và chết nhiều. Anh đã
-                                tìm tòi nghiên cứu, nay quy mô chuồng trại của anh đã rất lớn, và làm chủ công nghệ nuôi
-                                chồn hiện đại. Ngoài cung cấp con giống và chồn thịt thương phẩm, anh còn nhận hươớng
-                                dẫn dạy nghề nuôi chồn cho những người chăn nuôi.</p>
+                            <p>Hiêu Farmer là một nông dân trẻ tại Việt Nam, đam mê trồng trọt và nuôi thú từ nhỏ. Anh ta đã dành nhiều năm để tìm hiểu và học hỏi về kỹ thuật canh tác và chăm sóc cây trồng, từ đó trở thành một nông dân chuyên nghiệp với kinh nghiệm và kiến thức đầy đủ.</p>
+                                <p>Hiêu Farmer luôn chú trọng đến sự phát triển bền vững và an toàn của sản phẩm nông nghiệp. Anh ta sử dụng các phương pháp trồng trọt hữu cơ và không sử dụng thuốc trừ sâu và phân bón hóa học độc hại. Thay vào đó, anh ta sử dụng các loại phân bón tự nhiên và các kỹ thuật canh tác thông minh để tăng hiệu suất và giảm thiểu rủi ro cho môi trường.</p>
                         </div>
                     </div>
                 </div>
@@ -124,17 +126,21 @@
                 <h1 class="text-center">Sản phẩm nổi bật</h1>
                 <div class="container">
                     <div class="row g-5">
-                        <div class="col-12 col-lg-4 ps-0">
+                        <div class="col-12 col-lg-4 ps-0 position-relative">
                             <img src="./img/anh5.jpg" class="w-100 bg-body rounded-2 img_sp">
+                            <div class="position-absolute bottom-0 start-50 translate-middle-x mb-3 text-light"><h5>Sản phẩm 1</h5></div>
                         </div>
-                        <div class="col-12 col-lg-4 ps-0 ">
+                        <div class="col-12 col-lg-4 ps-0 position-relative">
                             <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">
+                            <div class="position-absolute bottom-0 start-50 translate-middle-x mb-3 text-light"><h5>Sản phẩm 2</h5></div>
                         </div>
-                        <div class="col-12 col-lg-4 ps-0 ">
+                        <div class="col-12 col-lg-4 ps-0 position-relative">
                             <img src="./img/anh3.jpg" class="w-100 bg-body rounded-2 img_sp">
+                            <div class="position-absolute bottom-0 start-50 translate-middle-x mb-3 text-light"><h5>Sản phẩm 3</h5></div>
                         </div>
-                        <div class="col-12 col-lg-4 ps-0">
+                        <div class="col-12 col-lg-4 ps-0 position-relative">
                             <img src="./img/anh2.jpg" class="w-100 bg-body rounded-2 img_sp">
+                            <div class="position-absolute bottom-0 start-50 translate-middle-x mb-3 text-light"><h5>Sản phẩm 4</h5></div>
                         </div>
                     </div>
                 </div>
@@ -145,27 +151,13 @@
                     <div class="row">
                         <div class="col-12 col-lg-3 ps-0">
                             <div class="d-flex flex-column bd-highlight mb-3">
-                                <a href="#!" style="text-decoration: none">
+                                <a class="nav-link active" href="./pages/ho-tro-ky-thuat-benh-thuong-gap.html" style="text-decoration: none">
                                     <div class="p-2 bd-highlight">
-                                        <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">
+                                        <img src="./img/carousel1.jpg" class="w-100 bg-body rounded-2 img_sp">
                                     </div>
                                     <div class="p-2 bd-highlight">
-                                        <h5>Text title display</h5>
-                                        <p>Text display1</p>
-                                    </div>
-                                </a>
-
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-3 ps-0">
-                            <div class="d-flex flex-column bd-highlight mb-3">
-                                <a href="#!" style="text-decoration: none">
-                                    <div class="p-2 bd-highlight">
-                                        <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">
-                                    </div>
-                                    <div class="p-2 bd-highlight">
-                                        <h5>Text title display</h5>
-                                        <p>Text display1</p>
+                                        <h5>Một số bệnh thường gặp ở chồn hương</h5>
+                                        <p>Bệnh viêm phổi, bệnh do virus, bệnh do ký sinh trùng, ...</p>
                                     </div>
                                 </a>
 
@@ -173,27 +165,13 @@
                         </div>
                         <div class="col-12 col-lg-3 ps-0">
                             <div class="d-flex flex-column bd-highlight mb-3">
-                                <a href="#!" style="text-decoration: none">
+                                <a class="nav-link active" href="./pages/ho-tro-ky-thuat-benh-thuong-gap.html" style="text-decoration: none">
                                     <div class="p-2 bd-highlight">
-                                        <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">
+                                        <img src="./img/carousel2.jpg" class="w-100 bg-body rounded-2 img_sp">
                                     </div>
                                     <div class="p-2 bd-highlight">
-                                        <h5>Text title display</h5>
-                                        <p>Text display1</p>
-                                    </div>
-                                </a>
-
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-3 ps-0">
-                            <div class="d-flex flex-column bd-highlight mb-3">
-                                <a href="#!" style="text-decoration: none">
-                                    <div class="p-2 bd-highlight">
-                                        <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">
-                                    </div>
-                                    <div class="p-2 bd-highlight">
-                                        <h5>Text title display</h5>
-                                        <p>Text display1</p>
+                                        <h5>Chăm sóc chồn hương vào mùa đông</h5>
+                                        <p>Tăng cường dinh dưỡng, cung cấp nơi ấm áp, đảm bảo sự thông thoáng, ...</p>
                                     </div>
                                 </a>
 
@@ -201,13 +179,41 @@
                         </div>
                         <div class="col-12 col-lg-3 ps-0">
                             <div class="d-flex flex-column bd-highlight mb-3">
-                                <a href="#!" style="text-decoration: none">
+                                <a class="nav-link active" href="./pages/ho-tro-ky-thuat-benh-thuong-gap.html" style="text-decoration: none">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="./img/carousel2.jpg" class="w-100 bg-body rounded-2 img_sp">
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <h5>Chọn giống chồn hương có chất lượng tốt, khỏe mạnh</h5>
+                                        <p></p>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 ps-0">
+                            <div class="d-flex flex-column bd-highlight mb-3">
+                                <a class="nav-link active" href="./pages/ho-tro-ky-thuat-benh-thuong-gap.html" style="text-decoration: none">
                                     <div class="p-2 bd-highlight">
                                         <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">
                                     </div>
                                     <div class="p-2 bd-highlight">
-                                        <h5>Text title display</h5>
-                                        <p>Text display1</p>
+                                        <h5>Kỹ thuật xử lý thức ăn chăn nuôi chồn hương</h5>
+                                        <p>Protein, chất béo, chất đạm, vitamin, rau củ quả, ...</p>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 ps-0">
+                            <div class="d-flex flex-column bd-highlight mb-3">
+                                <a class="nav-link active" href="./pages/ho-tro-ky-thuat-benh-thuong-gap.html" style="text-decoration: none">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <h5>Kỹ thuật chăm sóc con non mới sinh</h5>
+                                        <p>Môi trường sống, thức ăn, nhiệt độ, ...</p>
                                     </div>
                                 </a>
 
@@ -301,7 +307,7 @@
                         <div class="row">
                             <div class="col-12 col-lg-6 ps-0 content-product-type1">
                                 <div class="d-flex flex-column bd-highlight mb-3">
-                                    <a href="#!" style="text-decoration: none">
+                                    <a class="nav-link active" href="#!" style="text-decoration: none">
                                         <div class="p-2 bd-highlight">
                                             <img src="./img/anh5.jpg" class="w-100 bg-body rounded-2 img_sp">
                                         </div>
@@ -315,7 +321,7 @@
                             </div>
                             <div class="col-12 col-lg-6 ps-0 content-product-type2">
                                 <div class="d-flex flex-column bd-highlight mb-3">
-                                    <a href="#!" style="text-decoration: none">
+                                    <a class="nav-link active" href="#!" style="text-decoration: none">
                                         <div class="p-2 bd-highlight">
                                             <img src="./img/anh2.jpg" class="w-100 bg-body rounded-2 img_sp">
                                         </div>
@@ -329,7 +335,7 @@
                             </div>
                             <div class="col-12 col-lg-6 ps-0 content-product-type2">
                                 <div class="d-flex flex-column bd-highlight mb-3">
-                                    <a href="#!" style="text-decoration: none">
+                                    <a class="nav-link active" href="#!" style="text-decoration: none">
                                         <div class="p-2 bd-highlight">
                                             <img src="./img/anh3.jpg" class="w-100 bg-body rounded-2 img_sp">
                                         </div>
@@ -343,7 +349,7 @@
                             </div>
                             <div class="col-12 col-lg-6 ps-0 content-product-type1">
                                 <div class="d-flex flex-column bd-highlight mb-3">
-                                    <a href="#!" style="text-decoration: none">
+                                    <a class="nav-link active" href="#!" style="text-decoration: none">
                                         <div class="p-2 bd-highlight">
                                             <img src="./img/anh4.jpg" class="w-100 bg-body rounded-2 img_sp">
                                         </div>
@@ -367,11 +373,11 @@
                     <div class="col px-0">
                         <div class="row align-items-center">
                             <div class="col-4">
-                                <a href="./pages/ho-tro-ky-thuat-benh-thuong-gap.html" style="text-decoration: none"><img src="./img/carousel1.jpg" alt="anh1"
+                                <a class="nav-link active" href="./pages/ho-tro-ky-thuat-benh-thuong-gap.html" style="text-decoration: none"><img src="./img/carousel1.jpg" alt="anh1"
                                                                                 class="w-100"></a>
                             </div>
                             <div class="col-8">
-                                <a href="./pages/ho-tro-ky-thuat-benh-thuong-gap.html" style="text-decoration: none">
+                                <a class="nav-link active" href="./pages/ho-tro-ky-thuat-benh-thuong-gap.html" style="text-decoration: none">
                                     <h5>Một số bệnh thường gặp trên chồn hương</h5>
                                     <ol>
                                         <li>Bệnh viêm phổi: Đây là bệnh phổ biến nhất trên chồn hương. Chồn hương bị
@@ -397,13 +403,13 @@
                     <div class="col px-0">
                         <div class="row align-items-center">
                             <div class="col-4">
-                                <a href="#!" style="text-decoration: none">
+                                <a class="nav-link active" href="#!" style="text-decoration: none">
                                     <img src="./img/carousel2.jpg" alt="anh2" class="w-100">
                                 </a>
 
                             </div>
                             <div class="col-8">
-                                <a href="#!" style="text-decoration: none">
+                                <a class="nav-link active" href="#!" style="text-decoration: none">
                                     <h5>Chăm sóc chồn hương vào mùa đông</h5>
                                     <ol>
                                         <li>Tăng cường dinh dưỡng: Cần cung cấp cho chồn hương thức ăn đầy đủ, giàu chất
@@ -432,12 +438,12 @@
                     <div class="col px-0">
                         <div class="row align-items-center">
                             <div class="col-4">
-                                <a href="#!" style="text-decoration: none"><img src="./img/carousel1.jpg" alt="anh1"
+                                <a class="nav-link active" href="#!" style="text-decoration: none"><img src="./img/carousel1.jpg" alt="anh1"
                                                                                 class="w-100"></a>
                             </div>
                             <div class="col-8">
                                 <a href="#!">KINH DOANH</a>
-                                <a href="#!" style="text-decoration: none">
+                                <a class="nav-link active" href="#!" style="text-decoration: none">
                                     <h5>Mở trại chỉ nuôi loài độc lạ ít người biết, ông chủ thu lãi tiền tỷ</h5>
                                     <p>Bỏ nghề xây dựng, anh Nguyễn Văn Chúc (50 tuổi, quê Nam Định) lập trại nuôi con vật độc lạ như dúi, don, chồn ở TP. Cần Thơ, Đồng Nai,... thu lãi bạc tỷ mỗi năm.</p>
                                 </a>
@@ -450,14 +456,14 @@
                     <div class="col px-0">
                         <div class="row align-items-center">
                             <div class="col-4">
-                                <a href="#!" style="text-decoration: none">
+                                <a class="nav-link active" href="#!" style="text-decoration: none">
                                     <img src="./img/carousel2.jpg" alt="anh2" class="w-100">
                                 </a>
 
                             </div>
                             <div class="col-8">
                                 <a href="#!">SỨC KHỎE</a>
-                                <a href="#!" style="text-decoration: none">
+                                <a class="nav-link active" href="#!" style="text-decoration: none">
                                     <h5>Người nuôi chó cần làm gì để phòng nguy cơ lây nhiễm sán?</h5>
                                     <p>Theo các chuyên gia, người nuôi chó có nguy cơ mắc bệnh sán dây chó cao hơn nhiều lần so với bình thường.</p>
                                 </a>
@@ -593,7 +599,7 @@
     }
 
     $(document).ready(function () {
-        let page = window.localStorage.getItem('page')
+        let page = window.sessionStorage.getItem('page')
         display(page);
         $(".img_sp").mouseenter(function () {
             $(this).addClass('shadow-lg');
