@@ -538,11 +538,12 @@
     </div>
 </div>
 </body>
-<script src="./js/local-storage.js"></script>
 <script>
     function display(val) {
         $(".content").children().hide();
-        switch (val) {
+        console.log(val)
+        console.log($(".content"))
+        switch (+val) {
             case 0:
                 $(".content-home").show();
                 break;
@@ -550,6 +551,7 @@
                 $(".content-about").show();
                 break;
             case 2:
+                console.log('aaaa')
                 $(".content-product").show();
                 display_product(0);
                 break;
