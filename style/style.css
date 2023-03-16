@@ -22,7 +22,10 @@ body {
 }
 .img_sp {
     padding: 0px;
-    height: 300px;
+    max-height: 300px;
+}
+.tech-img {
+    max-height: 190px;
 }
 .product-text {
     color: white;
