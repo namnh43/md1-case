@@ -313,7 +313,7 @@
             <div class="content5 my-3">
                 <h1 class="text-center my-4">Tin tức</h1>
                 <div class="container d-grid p-1 overflow-hidden">
-                    <div class="row gx-5">
+                    <div class="row gx-5 home-news">
                         <div class="col w-100 img_sp me-5">
                             <div class="col px-0">
                                 <div class="row align-items-center">
@@ -768,6 +768,32 @@
             $(".news-list").append(innerHTML);
         })
     }
+    function updateHomeNews(news) {
+        $(".home-news").empty();
+        news.slice().reverse().forEach((element, index) => {
+            let innerHTML = `<div class="col-6 img_news my-3">
+                            <div class="col px-0">
+                                <div class="row align-items-center">
+                                    <div class="d-md-none d-lg-block col-4">
+                                        <a class="nav-link active" href="#!" style="text-decoration: none"><img
+                                                src=${element.avatar} alt="anh1"
+                                                class="w-100"></a>
+                                    </div>
+                                    <div class="col-8">
+                                        <a href="#!">${element.topic.toUpperCase()}</a>
+                                        <a class="nav-link active" href="#!" style="text-decoration: none">
+                                            <h6>${element.title}</h6>
+                                            <p>${element.content.slice(0,70)} ...</p>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`
+
+            $(".home-news").append(innerHTML);
+        })
+    }
 
     function loadNews() {
         //Load news list
@@ -798,6 +824,7 @@
             news.push(item2);
         }
         updateNews(news);
+        updateHomeNews(news);
     }
 
     $(document).ready(function () {
