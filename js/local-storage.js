@@ -4,6 +4,6 @@ function setContent(page){
     window.location.href = '../index.html'
 }
 function setContentNews(arr) {
-    window.localStorage.setItem('news', JSON.stringify(arr));
+    window.sessionStorage.setItem('news', JSON.stringify(arr));
     window.location.href = '../index.html';
 }

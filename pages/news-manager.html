@@ -21,7 +21,7 @@
         <div class="col col-lg-3 px-0 d-noe d-lg-block menu">
             <ul class="nav flex-column list-group list-group-flush">
                 <li class="nav-item list-group-item">
-                    <a class="nav-link active" aria-current="page" href="#!">Bài viết</a>
+                    <a class="nav-link active" aria-current="page" href="#!">Menu</a>
                 </li>
             </ul>
         </div>
@@ -69,8 +69,14 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col d-md-flex justify-content-md-end">
+            <button type="button" class="btn btn-outline-success return-button">Return main page</button>
+        </div>
+    </div>
 </div>
 <script src="../js/news.js"></script>
+<script src="../js/local-storage.js"></script>
 <script src="../js/news-manager.js"></script>
 <script>
     function toogle_button() {
@@ -109,6 +115,7 @@
     }
     $(document).ready(function () {
         let newsArr = loadContent();
+        console.log(newsArr)
         display_content(newsArr);
         $(".content-editor").hide();
         let editingIndex = false;
@@ -176,6 +183,11 @@
             $(".update-btn").prop("disabled",true)
         })
 
+        $(".return-button").click(function () {
+            //Set newsArr to localstorage
+            setContentNews(newsArr);
+            setContent(4);
+        })
     })
 </script>
 

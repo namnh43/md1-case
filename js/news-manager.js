@@ -10,17 +10,18 @@ function init(){
     news2.status = true;
     news2.author = "namnguyen";
     news2.content = "Theo các chuyên gia, người nuôi chó có nguy cơ mắc bệnh sán dây chó cao hơn  nhiều  lần so với bình thường.";
-    newsList.push(news2);
-    newsList.push(news2);
-    newsList.push(news2);
     newsList.push(news1);
-    newsList.push(news1);
+    newsList.push(news2);
 }
 
 function loadContent(){
-    let json = window.localStorage.getItem('news');
+    let json = window.sessionStorage.getItem('news');
     if(json) {
-        newsList = JSON.parse(json);
+        let arr = JSON.parse(json);
+        arr.forEach(element => {
+            let item = new News(element._topic, element._title);
+            newsList.push(item)
+        })
     } else {
         init();
     }
