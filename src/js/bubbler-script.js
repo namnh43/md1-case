@@ -25,6 +25,9 @@ var options =
             label: 'Messenger',
             display: {
                 // padding: '5px',
+            },
+            callback: function() {
+                window.open("https://m.me/Hieu240889");;
             }
         }
     ];
