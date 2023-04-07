@@ -7,7 +7,7 @@ var options =
                 // padding: '5px',
             },
             callback: function() {
-                alert('dasd');
+                alert('call to open zalo');
             }
         },
         {
