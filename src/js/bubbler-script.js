@@ -15,6 +15,9 @@ var options =
             label: 'Zalo chat',
             display: {
                 // padding: '5px',
+            },
+            callback: function() {
+                window.open("https://zalo.me/0338856789");;
             }
         },
         {
