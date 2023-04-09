@@ -7,6 +7,9 @@ body {
 #addr {
     font-family: 'Tilt Neon', cursive;
 }
+.navbar-nav {
+    font-family: 'Lato', sans-serif;
+}
 .carousel-item img {
     height: 350px;
 }
