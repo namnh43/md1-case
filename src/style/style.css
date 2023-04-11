@@ -10,6 +10,9 @@ body {
 .navbar-nav {
     font-family: 'Lato', sans-serif;
 }
+ul.navbar-nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
 .carousel-item img {
     height: 350px;
 }

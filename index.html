@@ -54,8 +54,19 @@
                         <li class="nav-item about-page" onclick="display(1)">
                             <a class="nav-link active" aria-current="page" href="#">Giới thiệu</a>
                         </li>
-                        <li class="nav-item product-page" onclick="display(2)">
-                            <a class="nav-link active" aria-current="page" href="#">Sản phẩm</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="display(2)">
+                                Sản phẩm
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./src/pages/products/congiong.html">Con giống</a></li>
+                                <li><a class="dropdown-item" href="./src/pages/products/haubi.html">Hậu bị</a></li>
+                                <li><a class="dropdown-item" href="./src/pages/products/thuongpham.html">Thương phẩm</a></li>
+                                <li>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+                                <li><a href="#" class="dropdown-item">Tư vấn</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item tech-page" onclick="display(3)">
                             <a class="nav-link active" aria-current="page" href="#">Hỗ trợ kỹ thuật</a>
@@ -607,54 +618,9 @@
 <script src="src/js/news.js"></script>
 <script src="src/js/bubbler.js"></script>
 <script src="src/js/bubbler-script.js"></script>
+<script src="src/js/display-homepage.js"></script>
 <script>
-    function display(val) {
-        $(".content").children().hide();
-        switch (+val) {
-            case 0:
-                $(".content .content-home").show();
-                break;
-            case 1:
-                $(".content .content-about").show();
-                break;
-            case 2:
-                $(".content .content-product").show();
-                display_product(0);
-                break;
-            case 3:
-                $(".content .content-tech").show();
-                break;
-            case 4:
-                $(".content .content-news").show();
-                break;
-            case 5:
-                $(".content .content-contact").show();
-                break;
-            default:
-                $(".content .content-home").show();
-                break;
-        }
-    }
 
-    function display_product(val) {
-        $(".content-product-type1").hide();
-        $(".content-product-type2").hide();
-        switch (val) {
-            case 0:
-                $(".content-product-type1").show();
-                $(".content-product-type2").show();
-                break;
-            case 1:
-                $(".content-product-type1").show();
-                break;
-            case 2:
-                $(".content-product-type2").show();
-                break;
-            default:
-                display(2);
-                break;
-        }
-    }
 
     function updateNews(news) {
         $(".news-list").empty();

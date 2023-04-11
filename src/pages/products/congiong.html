@@ -30,9 +30,10 @@
     </div>
   </div>
   <div class="header2">
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="../../../index.html">
           <img src="../../img/avatar.png" alt="" width="50" height="50" class=" align-text-center" onclick="display(0)">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -42,19 +43,33 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item home-page" onclick="display(0)">
+            <li class="nav-item home-page" onclick="setContent(0)">
               <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
             </li>
-            <li class="nav-item about-page" onclick="display(1)">
+            <li class="nav-item about-page" onclick="setContent(1)">
               <a class="nav-link active" aria-current="page" href="#">Giới thiệu</a>
             </li>
-            <li class="nav-item product-page" onclick="display(2)">
-              <a class="nav-link active" aria-current="page" href="#">Sản phẩm</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="setContent(2)">
+                Sản phẩm
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./congiong.html">Con giống</a></li>
+                <li><a class="dropdown-item" href="./haubi.html">Hậu bị</a></li>
+                <li><a class="dropdown-item" href="./thuongpham.html">Thương phẩm</a></li>
+                <li>
+                  <div class="dropdown-divider"></div>
+                </li>
+                <li><a href="#" class="dropdown-item">Tư vấn</a></li>
+              </ul>
             </li>
-            <li class="nav-item tech-page" onclick="display(3)">
+<!--            <li class="nav-item product-page" onclick="setContent(2)">-->
+<!--              <a class="nav-link active" aria-current="page" href="#">Sản phẩm</a>-->
+<!--            </li>-->
+            <li class="nav-item tech-page" onclick="setContent(3)">
               <a class="nav-link active" aria-current="page" href="#">Hỗ trợ kỹ thuật</a>
             </li>
-            <li class="nav-item contact-page" onclick="display(5)">
+            <li class="nav-item contact-page" onclick="setContent(5)">
               <a class="nav-link active" aria-current="page" href="#">Liên hệ</a>
             </li>
           </ul>
@@ -126,4 +141,6 @@
 </body>
 <script src="../../js/bubbler.js"></script>
 <script src="../../js/bubbler-script.js"></script>
+<script src="../../js/display-homepage.js"></script>
+<script src="../../js/local-storage.js"></script>
 </html>
