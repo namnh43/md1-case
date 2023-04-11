@@ -1,14 +1,14 @@
 var options =
     [
         {
-            icon:'<img src="src/img/icon/telephone.png" width="55px" height="55px">',
+            icon:'<img src="https://cdn-thumbs.imagevenue.com/3a/2d/0d/ME168DBX_t.png" width="55px" height="55px">',
             label: '(+84)338856789',
             display: {
                 // padding: '5px',
             }
         },
         {
-            icon:'<img src="src/img/icon/zalo_icon.png" width="55px" height="55px">',
+            icon:'<img src="https://cdn-thumbs.imagevenue.com/a8/70/aa/ME168DBY_t.png" width="55px" height="55px">',
             label: 'Zalo chat',
             display: {
                 // padding: '5px',
@@ -18,7 +18,7 @@ var options =
             }
         },
         {
-            icon:'<img src="src/img/icon/fb-messenger.png" width="55px" height="55px">',
+            icon:'<img src="https://cdn-thumbs.imagevenue.com/66/ac/73/ME168DBZ_t.png" width="55px" height="55px">',
             label: 'Messenger',
             display: {
                 // padding: '5px',
